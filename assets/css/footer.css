@@ -1,0 +1,39 @@
+footer{
+  margin-top: 10vh;
+}
+
+.footer__brand-logo{
+  padding: 1em;
+  border-top: 1px solid var(--color-footer-border);
+
+}
+
+.footer__title{
+  color: var(--color-standart);
+  font-family: var(--font-title);
+  text-decoration: none;
+}
+
+.footer__menu{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    padding: 1em;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+input, ul.submenu {
+  display: none;
+}
+
+/*position the label*/
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+input:checked~ul.submenu {
+  display: block;
+}

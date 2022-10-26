@@ -1,0 +1,15 @@
+@import url("./header.css");
+@import url("./top-bar.css");
+@import url("/assets/css/footer.css");
+
+:root{
+  --header-color: #ffffff;
+  --font-title: 'ChomskyRegular';
+  --font-top-bar: 'Libre Franklin';
+  --font-color-subscribe: #326891;
+  --color-top-bar-border: #e1e1e1;
+  --color-top-bar: #eeeeee;
+  --color-footer-border: #e1e1e1;
+  --color-standart: #000000;
+
+} 

@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(#ffffff);
+}
+
+.container__title{
+  font-family: var(--font-title);
+  font-size: 25px;
+}
+
+.header__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding: 1em;
+}
+
+.container__button:checked ~ .container__label > .header__menu{
+    background-image: url("../img/menuFechado.png");
+}
+
+.container__button:checked ~ .container__menu {
+    display: block;
+}
+
+.container__button{
+    display: none;
+}
+
+header{
+  position: relative;
+}
+
+.container__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__list, .container__item{
+  padding: 1em;
+}
+
+.container__item a{
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.top-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-top-bar);
+  padding: 1em;
+  border: 1px solid var(--color-top-bar-border);
+}
+
+.top-bar__data, .top-bar__subscribe{
+  font-family: var(--font-top-bar);
+  font-size: 11px;
+}
+
+.top-bar__data{
+  font-weight: 700;
+}
+
+.top-bar__subscribe{
+  color: var(--font-color-subscribe);
+  text-transform: uppercase;
+}
