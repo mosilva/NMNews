@@ -1,5 +1,6 @@
 @import url("./header.css");
 @import url("./top-bar.css");
+@import url("./news-main.css");
 @import url("/assets/css/footer.css");
 
 :root{
@@ -13,5 +14,6 @@
   --color-standart: #000000;
   --font-label-footer: 'Libre Franklin';
   --color-label-footer: gray;
-
+  --color-news-main-live: #d0021b;
+  --color-news-abstract: #666360;
 } 
