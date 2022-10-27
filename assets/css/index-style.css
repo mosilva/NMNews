@@ -11,5 +11,7 @@
   --color-top-bar: #eeeeee;
   --color-footer-border: #e1e1e1;
   --color-standart: #000000;
+  --font-label-footer: 'Libre Franklin';
+  --color-label-footer: gray;
 
 } 

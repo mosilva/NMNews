@@ -12,28 +12,78 @@ footer{
   color: var(--color-standart);
   font-family: var(--font-title);
   text-decoration: none;
+  margin-left: 0.5em;
 }
 
 .footer__menu{
-    width: 24px;
-    height: 24px;
+
     display: inline-block;
-    padding: 1em;
+    padding-left: 1em;
+    cursor: pointer;
 }
 
-/*hide the inputs/checkmarks and submenu*/
-input, ul.submenu {
+/*faz  a caixa de input e a lista ficarem escondidas*/
+.container-footer__button, .container-footer__menu{
   display: none;
 }
 
-/*position the label*/
-label {
-  position: relative;
+/*quando o input é clicado, fica opaco */
+.container-footer__button:checked ~ .container-footer__label .footer__menu {
+  opacity: 0.7;
+}
+
+.container-footer__button:checked ~ .container-footer__menu {
   display: block;
+}
+
+.container-footer__label .footer__menu{
+  text-transform: uppercase;
+  font-family: var(--font-label-footer);
+  font-weight: 700;
+  color: var(--color-standart);
+  font-size: 13px;
+}
+
+.container-footer__menu{
+  padding-left: 1em;
+}
+
+.container-footer__item a{
+  text-decoration: none;
+  padding-bottom: 1em; 
+  color: var(--color-standart); 
   cursor: pointer;
 }
 
-/*show the submenu when input is checked*/
-input:checked~ul.submenu {
-  display: block;
+.container-footer{
+  margin-bottom: 2em;
+  margin-left: 0.5em;
+}
+
+.copyright-footer__text{
+    opacity: 0.8;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 1em;
+    
+} 
+
+.line-footer{
+  border-top: 1px solid var(--color-footer-border);
+}
+
+.other-info-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.other-info-footer__item{
+  padding: 0 1.5em 1em 1.5em;
+}
+
+.other-info-footer__item a{
+  text-decoration: none;
 }
