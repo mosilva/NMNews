@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/index-style.css" />
 
     <title>NMNews</title>
@@ -47,17 +51,89 @@
         <h3 class="top-bar__subscribe">Subscribe for $0.25/week</h3>
       </section>
       <section class="news-main">
-        <div class="news-main__live"><p><span class="news-main__live-text">Live</span> 29m ago</p></div>
+        <div class="news-main__live">
+          <p><span class="news-main__live-text">Live</span> 29m ago</p>
+        </div>
         <article>
-          <div class="news-main__title">Putin Rails Against "BLA BLA BLA" in speech aimed 
-          at U.S. Conservatives</div>
-          <div class="news-main__abstract">Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+          <div class="news-main__title">
+            Putin Rails Against "BLA BLA BLA" in speech aimed at U.S.
+            Conservatives
+          </div>
+          <div class="news-main__abstract">
+            Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec
+            leo commodo, ut interdum diam laoreet. Sed non consequat
+            odio.Interessantiss quisso pudia ce receita de bolis, mais bolis eu
+            num gostis.Si u mundo tá muito paradis? Toma um mé que o mundo vai
+            girarzis!Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non
+            tellus tristique interdum.
           </div>
         </article>
         <div class="news-main__related"><a href="#">See more updates</a></div>
-        
+      </section>
+      <section class="carousel">
+        <h2 class="carousel__title">Últimas imagens na Ucrania</h2>
+        <div class="carousel__container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-      
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assets/img/teste1.png" alt="tttttttttttt" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/teste2.png" alt="eeeeeeeeeee" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/teste1.png" alt="tttttttttttt" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/teste2.png" alt="eeeeeeeeeee" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/teste1.png" alt="tttttttttttt" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/teste2.png" alt="eeeeeeeeeee" />
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card">
+            <div class="card__description">
+              <div class="description">
+                <img
+                  src="./assets/img/Estrelinhas.png"
+                  alt="Avaliacao 5 estrelas"
+                />
+                <h3 class="description__title">Titulo do anuncio</h3>
+                <h2 class="description__title-product">descricao do anuncio</h2>
+                <p class="description__text">
+                  viage pra ucrania em ate 3x sem juros na ida
+                </p>
+              </div>
+              <img
+                src="./assets/img/ucraniaAnuncio.png"
+                alt="imagem ucrania"
+                              />
+            </div>
+            <div class="card__button">
+              <ul class="button">
+                <li class="button__item">
+                  <img
+                    src="./assets/img/Instagram.png"
+                    alt="icone do instagram"
+                  />
+                </li>
+              </ul>
+              <a href="#" class="button__anchor">Saiba mais</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <aside></aside>
@@ -118,25 +194,41 @@
       </div>
       <div class="line-footer"></div>
       <div class="copright-footer">
-        <p class ="copyright-footer__text">&copy; Copyright - NMNews Ltda. - 2022</p> 
+        <p class="copyright-footer__text">
+          &copy; Copyright - NMNews Ltda. - 2022
+        </p>
       </div>
       <div class="other-info-footer">
-      <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
-      <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste </a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
+        <h4 class="other-info-footer__item"><a href="#">teste</a></h4>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+    </script>
   </body>
 </html>
