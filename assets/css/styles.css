@@ -383,7 +383,6 @@ body{
 }
 
 
-
 .card--recents{
     display: none;
 }
@@ -456,4 +455,92 @@ body{
         color: #95999C;
     }
 }
+
+footer{
+    margin-top: 1rem;
+  }
+  
+  .footer__brand-logo{
+    padding: 1em;
+    border-top: 1px solid #aeaeae;
+  
+  }
+   
+  .footer__menu{
+      border-top: 0.015rem solid rgba(0, 0, 0, 0.25);
+      padding-left: 1em;
+      cursor: pointer;
+  }
+  
+  /*faz  a caixa de input e a lista ficarem escondidas*/
+  .container-footer__button, .container-footer__menu{
+    display: none;
+  }
+  
+  /*quando o input é clicado, fica opaco */
+  .container-footer__button:checked ~ .container-footer__label .footer__menu {
+    opacity: 0.7;
+  }
+  
+  .container-footer__button:checked ~ .container-footer__menu {
+    display: block;
+  }
+  
+  .container-footer__label .footer__menu{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    font-size: 13px;
+  }
+  
+  .container-footer__menu{
+    padding-left: 1em;
+  }
+  
+  .container-footer__item a{
+    text-decoration: none;
+    padding-bottom: 1em; 
+    color: #000000; 
+    cursor: pointer;
+  }
+  
+  .container-footer{
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+  }
+  
+  .copyright-footer__text{
+      display: flex;
+      color: #000000;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.8;
+      font-size: 13px;
+      font-weight: bold;
+      margin-left: 1em;
+      padding: 1em;
+      
+  } 
+  
+  .line-footer{
+    border-top: 1px solid #aeaeae;
+  }
+  
+  .other-info-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .other-info-footer__item{
+    padding: 0 1.5em 1em 1.5em;
+  }
+  
+  .other-info-footer__item a{
+    color: #666360;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
 
