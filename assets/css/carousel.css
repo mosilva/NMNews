@@ -58,10 +58,6 @@
   font-size: 14px;
 }
 
-.button__item{
-  margin: 0 0.5em;
-}
-
 .button__anchor{
   background: var(--color-news-abstract);
   padding: 1em 2.2em;
