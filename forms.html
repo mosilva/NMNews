@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/resetAllConfig.css" />
+    <link rel="stylesheet" href="./assets/css/stylesForms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chomsky" type="text/css"/>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"/>
+    <title>NMNwews | Forms</title>
+  </head>
+  <body>
+    <header class="header">
+      
+      <button class="header__menu" aria-label="menu"><i></i></button>
+      
+      <img
+        src="./assets/img/logoNMNews-removeBack.png"
+        alt="Brand logo NM News"
+        class="header__logo"/>
+
+        <p class="header__perfil">Marcelo Oliveira</p>
+      
+        <button class="header__notification" aria-label="notification"><i></i></button>
+    </header>    
+      
+    <nav class="lateral-menu">
+    
+        <img src="./assets/img/logoNMNews.png" alt="brand logo NMNews" class="lateral-menu__logo" />
+        <a href="index.html" class="lateral-menu__link lateral-menu__link--start lateral-menu__link--active">Home</a>
+        <a href="#" class="lateral-menu__link lateral-menu__link--videos">Vídeos</a>
+        <a href="#" class="lateral-menu__link lateral-menu__link--locals">Locals</a>
+        <a href="subscribe.html" class="lateral-menu__link lateral-menu__link--members">Subscribe</a>
+    
+      </nav>
+    
+      <script src="index.js"></script>
+    
+      <main class="main"> 
+        <article id="memberRegistration">
+          <h1 id="titleRegistration">Member registration</h1>
+          <br/><br/>
+          <form>
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" class="input-default" 
+              placeholder="Enter the full name without abbreviations" 
+              required>
+
+              <label for="email">Email</label>    
+              <input type="email" id="email" class="input-default" 
+              placeholder="example, youremail@domain.com"
+              required>
+
+              <label for="telephone">Cell</label>
+              <input type="tel" id="telephone" class="input-default" 
+              placeholder="+XX (XX) XXXXX-XXXX"
+              required>
+
+              <label for="purchase">Comments</label>
+              <textarea cols="70" rows="20" class="input-default"></textarea>
+               
+              <br/>
+              <fieldset>
+                  <legend>How do you prefer to be contacted?</legend>
+                  <label for="radio-email"><input type="radio" name ="contact" value="Email" id="radio-email">
+                  Email</label>                    
+
+                  <label for="radio-cell"><input type="radio" name ="contact" value="Cell" id="radio-cell">
+                  Cell</label>
+                  
+                  <label for="radio-whatsapp">
+                  <input type="radio" name ="contact" value="WhatsApp" id="radio-whatsapp" checked>
+                  WhatsApp</label>                    
+              </fieldset>
+
+              <br/>
+              <fieldset>
+                  <legend>What time do you prefer us to contact you?</legend>
+                  <select id="selectTimeContact">
+                      <option>Morning</option>
+                      <option>Afternoon </option>
+                      <option>Night</option>
+                  </select>
+               </fieldset>
+              
+              <label class="checkbox"><input type="checkbox" checked>Would you like to receive our newsletters by e-mail?</label>                            
+             
+              <input type="submit" value="Registration" class="send">
+              <a href="index.html"><input type="button" value="Back to Home" class="backHome"></a>
+
+          </form>
+
+      </article>
+
+  </main>
+
+
+      <footer>
+        <h2 class="footer__brand-logo">
+          <img src="./assets/img/logoNMNews.png" alt="brand logo NMNews" class="lateral-menu__logo" />
+        </h2>
+        <div class="container-footer">
+          <input
+            type="checkbox"
+            id="menu-footer-check01"
+            class="container-footer__button"
+          />
+          <label for="menu-footer-check01" class="container-footer__label">
+            <span class="footer__menu">News</span>
+          </label>
+          <nav class="container-footer__menu">
+            <ul class="container-footer__list">
+              <li class="container-footer__item"><a href="#">Politics</a></li>
+              <li class="container-footer__item"><a href="#">Sports</a></li>
+              <li class="container-footer__item"><a href="#">Business</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-footer">
+          <input
+            type="checkbox"
+            id="menu-footer-check02"
+            class="container-footer__button"
+          />
+          <label for="menu-footer-check02" class="container-footer__label">
+            <span class="footer__menu">Opinion</span>
+          </label>
+          <nav class="container-footer__menu">
+            <ul class="container-footer__list">
+              <li class="container-footer__item"><a href="#">Marcelo Oliveira</a></li>
+              <li class="container-footer__item"><a href="#">Dulcinea Dirce</a></li>
+              <li class="container-footer__item"><a href="#">Juliana da Silva</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-footer">
+          <input
+            type="checkbox"
+            id="menu-footer-check03"
+            class="container-footer__button"
+          />
+          <label for="menu-footer-check03" class="container-footer__label">
+            <span class="footer__menu">Arts</span>
+          </label>
+          <nav class="container-footer__menu">
+            <ul class="container-footer__list">
+              <li class="container-footer__item"><a href="#">Shows</a></li>
+              <li class="container-footer__item"><a href="#">Exposition</a></li>
+              <li class="container-footer__item"><a href="#">Theaters</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="line-footer"></div>
+        <div class="copright-footer">
+          <p class="copyright-footer__text">
+            &copy; Copyright - NMNews Ltda. - 2022
+          </p>
+        </div>
+        <div class="other-info-footer">
+          <h4 class="other-info-footer__item"><a href="#">NYCto</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Contact Us</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Acessibility</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Work with us</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Advertise</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">T Brand Studio</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Your Ad Choices</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Privacy Policy</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Terms of Service</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Terms of Sale</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Site Map</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Canada</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">International</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Help</a></h4>
+          <h4 class="other-info-footer__item"><a href="#">Substription</a></h4>
+        </div>
+      </footer>
+
+
+  </body>
+</html>
