@@ -1,6 +1,6 @@
 .top-bar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: var(--color-top-bar);
   padding: 1em;

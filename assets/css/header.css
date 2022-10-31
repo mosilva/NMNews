@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(#ffffff);
+  background-color: var(--header-color);
 }
 
 .container__title{
@@ -20,12 +20,28 @@
     padding: 1em;
 }
 
+ul[title]::before {
+  content: attr(title);
+  font-weight: 900;
+  padding: 4px;
+  margin-left: 0.8rem;
+}
+
+ .container__list{
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  padding: 0.5rem;
+}
 .container__button:checked ~ .container__label > .header__menu{
     background-image: url("../img/menuFechado.png");
 }
 
 .container__button:checked ~ .container__menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--header-color);
 }
 
 .container__button{
@@ -40,15 +56,17 @@ header{
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 100vw;
 }
 
 .container__list, .container__item{
   padding: 1em;
 }
 
-.container__item a{
+.container__item > a{
   text-decoration: none;
+  color: var(--color-standart);
+  display: block;
 }
 
 
