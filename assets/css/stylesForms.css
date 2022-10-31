@@ -646,7 +646,6 @@ form label, form legend{
 
 .send{
     display: inline;
-
     margin: 0 0 4rem 2rem;
     padding: 1rem;
     background: #E76F51;
@@ -662,6 +661,11 @@ form label, form legend{
 .send:hover{
     background: #2A9D8F;
     transform: scale(1.2);
+}
+
+.send:active{
+    background: yellow
+    transform: scale(1.5);
 }
 
 .backHome{

@@ -45,22 +45,22 @@
           <br/><br/>
           <form>
               <label for="fullName">Full name</label>
-              <input type="text" id="fullName" class="input-default" 
+              <input type="text" id="fullName"  name="fullName" class="input-default" 
               placeholder="Enter the full name without abbreviations" 
               required>
 
               <label for="email">Email</label>    
-              <input type="email" id="email" class="input-default" 
+              <input type="email" id="email" name="email" class="input-default" 
               placeholder="example, youremail@domain.com"
               required>
 
               <label for="telephone">Cell</label>
-              <input type="tel" id="telephone" class="input-default" 
-              placeholder="+XX (XX) XXXXX-XXXX"
+              <input type="tel" id="telephone" name="telephone" class="input-default" 
+              placeholder="+XX XX XXXXX-XXXX. Example, 55 11 9911445858"
               required>
 
               <label for="purchase">Comments</label>
-              <textarea cols="70" rows="20" class="input-default"></textarea>
+              <textarea cols="70" rows="20" class="input-default" name="comments"></textarea>
                
               <br/>
               <fieldset>
@@ -79,19 +79,38 @@
               <br/>
               <fieldset>
                   <legend>What time do you prefer us to contact you?</legend>
-                  <select id="selectTimeContact">
+                  <select id="selectTimeContact" name ="selectTimeContact">
                       <option>Morning</option>
                       <option>Afternoon </option>
                       <option>Night</option>
                   </select>
                </fieldset>
               
-              <label class="checkbox"><input type="checkbox" checked>Would you like to receive our newsletters by e-mail?</label>                            
-             
+               <br/>
+
               <input type="submit" value="Registration" class="send">
               <a href="index.html"><input type="button" value="Back to Home" class="backHome"></a>
 
           </form>
+
+          <script> //Com JavaScript
+            let form = document.querySelector("form");
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let data = new FormData(form);
+                fetch('https://script.google.com/macros/s/AKfycbxgXudnJfjXMmTFucrKcsgT_l-GYZcmAFrUrExeDu-kvbCGQcjA7i4F4F4HRrASUDBj/exec', {
+                    method: "POST",
+                    body: data
+                })
+                    .then(res => res.text())
+                    .then(data => { 
+                        document.querySelector("#msg").innerHTML = "Sucess"
+                        document.querySelector("#sub").value = "Sent";
+                    });
+            });
+        </script>
+</div>
+
 
       </article>
 
