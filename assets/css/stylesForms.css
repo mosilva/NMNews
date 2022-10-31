@@ -544,3 +544,147 @@ footer{
     font-size: 0.8rem;
   }
 
+
+
+
+
+
+
+
+.box{
+    position: relative;
+    width: 940 px;
+    margin: 0 50px;
+}
+
+nav{
+    position: absolute;
+    top: 18vh;
+    right: 1vw;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 25px;
+
+}
+
+nav a{
+    text-shadow: 2px 2px 2px #999999;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #E76F51;
+    text-decoration: underline;
+}
+
+.listProducts{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.listProducts li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+
+#memberRegistration{
+    color: #000000;
+    border-bottom: 70px solid;
+    border-color: #264653;
+    border-top: 70px solid;
+    border-color: #264653;
+    background: #aeaeae;
+    padding: 0 0 0 10%;
+}
+
+#titleRegistration{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    margin: 2px;
+    font-size: 28px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 24px;
+    margin: 5px 0 10px 10px;
+
+}
+
+.input-default{
+    display: block;
+    border: 5px solid #ffffff;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#selectTimeContact{
+    font-size: 18px;
+    margin: 0 0 0 15px;
+}
+
+
+.checkbox{
+    margin: 40px 0 40px 10px;
+}
+
+.send{
+    display: inline;
+
+    margin: 0 0 4rem 2rem;
+    padding: 1rem;
+    background: #E76F51;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.send:hover{
+    background: #2A9D8F;
+    transform: scale(1.2);
+}
+
+.backHome{
+    display: inline;
+
+    margin: 0 0 4rem 2rem;
+    padding: 1rem;
+    background: #E76F51;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.backHome:hover{
+    transform: scale(1.2);
+}
+
+
+.footer-principal{
+    background: linear-gradient(#264653,#E9C46A);
+}
+
